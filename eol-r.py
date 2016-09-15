@@ -1,5 +1,17 @@
 #!/usr/bin/python
 
+'''
+
+eol-r
+
+https://github.com/uuencode/eol-r
+
+This script converts line endings from DOS to Unix and vice-versa.
+You can convert a single file or multiple files in multiple directories recursively.
+Run it without any arguments to see how to use it.
+
+'''
+
 import sys, os, time
 
 # colors
@@ -117,7 +129,7 @@ print ' execution time:',totaltime,'sec'
 print '\n'
 
 # show log
-showlog=raw_input(' Would like to see a log (Y) or (N): ')
+showlog=raw_input(' Would like to see a log (y) or (n): ')
 if(showlog!='y'): print '\n'; exit()
 
 fconverts='\n'.join(fconverts)
